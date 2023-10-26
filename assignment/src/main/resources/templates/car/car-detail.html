@@ -22,11 +22,11 @@
                     <p class="card-text" th:text="'Model: '+${car.model}" />
                     <p class="card-text" th:text="'Year: '+${car.year}" />
                     <p class="card-text" th:text="'Price: '+${car.price}" />                        
-                    <a th:href="@{/car/update/id={id}(id=${car.id})}" class="btn btn-primary">Edit</a>
-                    <a th:href="@{/car/delete/id={id}(id=${car.id})}" class="btn btn-primary">Delete</a>
+                    <a th:href="@{/car/update/id={id}(id=${car.id})}" class="btn btn-outline-secondary">Edit</a>
+                    <a th:href="@{/car/delete/id={id}(id=${car.id})}" class="btn btn-outline-danger">Delete</a>
                 </div>
             </div>
-            <a href="/car/all" class="btn btn-primary" >Car List</a>
+            <a href="/car/all" class="btn btn-outline-info" >Car List</a>
         </div>
     </body>
 </html>
