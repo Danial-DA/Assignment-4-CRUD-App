@@ -27,6 +27,7 @@
                                 <th>ID</th>
                                 <th>Make</th>
                                 <th>Model</th>
+                                <th>Year</th>
                                 <th>Price</th>
                             </tr>
                         </thead>
@@ -35,6 +36,7 @@
                                 <td> <a th:href="@{/car/id={id}(id=${car.id})}" th:text=" ${car.id}" > </a></td>                           
                                 <td th:text=" ${car.make}"></td>
                                 <td th:text=" ${car.model}"></td>
+                                <td th:text=" ${car.year}"></td>
                                 <td th:text=" ${car.price}"></td>
                             </tr>
 

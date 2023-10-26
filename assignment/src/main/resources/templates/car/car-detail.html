@@ -18,8 +18,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Car</h5>
                     <p class="card-text" th:text=" 'ID: '+ ${car.id}" />
-                    <p class="card-text" th:text="'Name: '+${car.make}" />
-                    <p class="card-text" th:text="'Name: '+${car.model}" />
+                    <p class="card-text" th:text="'Make: '+${car.make}" />
+                    <p class="card-text" th:text="'Model: '+${car.model}" />
+                    <p class="card-text" th:text="'Year: '+${car.year}" />
                     <p class="card-text" th:text="'Price: '+${car.price}" />                        
                     <a th:href="@{/car/update/id={id}(id=${car.id})}" class="btn btn-primary">Edit</a>
                     <a th:href="@{/car/delete/id={id}(id=${car.id})}" class="btn btn-primary">Delete</a>
